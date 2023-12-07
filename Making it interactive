@@ -1,0 +1,22 @@
+index.html
+
+<body id="background">
+    <header>
+      <button id="white-button">White button</button>
+      <button id="pink-button">Pink button</button>
+
+
+
+main.js
+
+const whiteButton = document.getElementById("white-button");
+const pinkButton = document.getElementById("pink-button");
+const backgroundElement = document.getElementById("background");
+
+whiteButton.addEventListener("click", function (event) {
+  backgroundElement.style.backgroundColor = "#FFFFFF";
+});
+
+pinkButton.addEventListener("click", function (event) {
+  backgroundElement.style.backgroundColor = "#FFC0CB";
+});
