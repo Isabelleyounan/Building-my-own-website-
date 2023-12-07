@@ -1,22 +1,52 @@
 index.html
 
-<body id="background">
-    <header>
-      <button id="white-button">White button</button>
-      <button id="pink-button">Pink button</button>
+          <div class="animated-section"></div>
 
 
 
-main.js
+main.css
 
-const whiteButton = document.getElementById("white-button");
-const pinkButton = document.getElementById("pink-button");
-const backgroundElement = document.getElementById("background");
+div {
+  background-color: rgb(205, 255, 238);
+  width: 120px;
+  height: 120px;
+  margin-left: 340px;
+  margin-top: 0px;
+  border-radius: 35%;
+  animation-name: shake;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
 
-whiteButton.addEventListener("click", function (event) {
-  backgroundElement.style.backgroundColor = "#FFFFFF";
-});
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
 
-pinkButton.addEventListener("click", function (event) {
-  backgroundElement.style.backgroundColor = "#FFC0CB";
-});
+  40% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(20 deg) scale(1.2);
+  }
+
+  80% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  90% {
+    transform: rotate(20 deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
